@@ -16,6 +16,7 @@
 
 package com.example.android.eggtimernotifications.util
 
+import android.annotation.SuppressLint
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
@@ -37,6 +38,7 @@ private val FLAGS = 0
  *
  * @param context, activity context.
  */
+@SuppressLint("WrongConstant")
 fun NotificationManager.sendNotification(messageBody: String, applicationContext: Context) {
     // Create the content intent for the notification, which launches
     // this activity
